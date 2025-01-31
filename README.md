@@ -46,9 +46,7 @@ Today, I am building a **containerized management system** that uses Docker as a
 
 ### Overview
 
-* [Repo Codes]()
-
-* [documentation]()
+* [Blog Documentation]()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -59,7 +57,7 @@ Today, I am building a **containerized management system** that uses Docker as a
 
 - Implementing **containerization** with Docker. 
 
-- Creating a route using **Amazon API Gateway**.
+- Creating a customized API route using **Amazon API Gateway**.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
