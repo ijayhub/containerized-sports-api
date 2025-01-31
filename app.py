@@ -6,11 +6,15 @@ app = Flask(__name__)
 
 # SerpAPI base URL and API key
 SERP_API_URL = "https://serpapi.com/search.json"
-SERP_API_KEY = os.getenv("SPORTS_API_KEY")
+SERP_API_KEY = os.getenv("SERP_API_KEY")
+
+# Check if the API key is missing
+if not SERP_API_KEY:
+    raise ValueError("API key is missing. Please set the SERP_API_KEY environment variable.")
 
 @app.route('/sports', methods=['GET'])
 def get_nfl_schedule():
-    #Fetches the NFL schedule from SerpAPI and returns it as JSON
+    # Fetches the NFL schedule from SerpAPI and returns it as JSON
     try:
         # Query SerpAPI
         params = {
